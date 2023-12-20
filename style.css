@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 
-
 :root {
     --white: rgb(255, 255, 255);
     --black: rgba(0, 0, 0, 0.6);
@@ -10,24 +9,16 @@
     --blue: #008cff;
     --red: rgb(204, 2, 2);
     --font-family: 'Varela Round', sans-serif;
-    
-
 }
-/* --header : 35px;
---input Label : 20px;
---input : 17px;
---btn : 20px;
---list item: 17px;
---list header, Total : 20px 
---validation alert : 15px */
 
 
 body{
     margin: 0%;
     max-width: 1400px;
     width: 100%;
-    background-color: #7b67c3;
     font-family: var(--font-family);
+    background-color: #7b67c3;
+    background: linear-gradient(90deg,  #451ad3 50%, #7b67c3 50%, 100%),rgba(99, 83, 159, 0.3);
 }
 
 h2 {
@@ -37,6 +28,7 @@ h2 {
     color: var(--white);
 }
 
+
 /* Main Container */
 
 #mainContainer {
@@ -45,7 +37,7 @@ h2 {
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 60%;
+    width: 63%;
     top: 120px;
     background-color: var(--white);  
     border-radius: 5px;
@@ -59,9 +51,7 @@ h2 {
     margin: 20px 20px;
 }
 
-#formContainer{
-    border-right: 1px solid gray;
-}
+
 
 div#product,#amount,#submitBtn {
     margin: 5px;
@@ -73,9 +63,10 @@ input#inputText,#inputnumber{
 }
 
 /* Billing Heading */
+
 #billingHeading {
     display: flex;
-    gap: 50px;
+    gap: 112px;
     border-bottom: 1px solid gray;
 }
 
@@ -90,7 +81,7 @@ button#buttonvalidation {
     text-align: center;
     border: none;
     border-radius: 5px;
-    background-color:var(--dark_lavendar);
+    background: linear-gradient(90deg,#7b67c3 50%, #008cff 100%);
     color: var(--white);
 }
 
@@ -105,8 +96,9 @@ i.fa {
 }
 i.fa {
     position: relative;
-    left: 2px;
+    left: 18px;
 }
+
 
 /* Class List */
 
@@ -114,11 +106,72 @@ i.fa {
     color: var(--red);
 }
 
+.block{
+    display: block;
+}
+
 
 /* Appending Div */
+
 
 div#billingList {
     width: 100%;
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    height: 42px;
 }
+
+.billingamountsection {
+    display: flex;
+}
+
+div#totalamount {
+    position: relative;
+    top: 122px;
+}
+
+h3.productNumber {
+    margin-left: 5%;
+    padding: 0px;
+}
+
+div#Totalcal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Append Lists Div */
+
+div#dommanipulation {
+    width: 100%;
+    max-width: 100%;
+    max-height: 185px;
+    height: 100%;
+    overflow-y: auto;
+    border-bottom: 1px solid;
+}
+
+
+/* Hover Class list */
+
+/* Delete icon */
+i.material-icons {
+    display: none;
+    cursor: pointer;
+}
+
+/* Delete icon Hover */
+#billingList:hover .material-icons {
+    display: block;
+    position: relative;
+    right: 10px;
+    color: var(--red);
+}
+
+/* Display block and None */
+.TotalHeading {
+    display: none;
+}
+
+

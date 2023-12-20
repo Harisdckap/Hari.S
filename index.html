@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-   <h2>Shopping Cart</h2>
+    <h2>Shopping Cart</h2>
     <div id="mainContainer">
-      <div id="formContainer">
-        <form name="formValidation" id="form">
-            <div id="product">
-            <h3 class="headTitle">Product Name</h3>
-            <input type="text" id="inputText" placeholder="product">
-            <hr>
-            <p class="alert"></p>
+        <div id="formContainer">
+            <form name="formValidation" id="form">
+                <div id="product">
+                    <h3 class="headTitle">Product Name</h3>
+                    <input type="text" id="inputText" placeholder="product">
+                    <hr>
+                    <p class="alert"></p>
+                </div>
+                <div id="amount">
+                    <h3 class="headTitle">Amount</h3>
+                    <input type="number" id="inputnumber" placeholder="amount">
+                    <hr>
+                    <p class="alert1"></p>
+                </div>
+                <div id="submitBtn">
+                    <button type="submit" id="buttonvalidation" value="Add to Cart">Add to Cart</button>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div id="billingSection">
+            <div id="billingHeading">
+                <h3 class="headTitle">ProductName</h3>
+                <div class="billingamountsection">
+                    <h3 class="headTitle">Amount</h3>
+                    <p class="sorticon">
+                        <i style="font-size:24px" class="fa">&#xf0de;</i>
+                    </p>
+                </div>
             </div>
-            <div id="amount">
-                <h3 class="headTitle">Amount</h3>
-                <input type="number" id="inputnumber" placeholder="amount">
-                <hr>
-                <p class="alert1"></p>
+            <div id="dommanipulation"></div>
+            <div id="Totalcal">
+                <h3 class="TotalHeading">Total Heading</h3>
+                <h3 id="totalcalculation"></h3>
             </div>
-            <div id="submitBtn">
-               <button type="submit" id="buttonvalidation" value="Add to Cart">Add to Cart</button>
-            </div>
-        </form>
-      </div>
-      <div id="billingSection">
-           <div id="billingHeading">
-             <h3 class="headTitle">ProductName</h3>
-             <h3 class="headTitle">Amount</h3>
-             <p class="sorticon">
-                <i style="font-size:24px" class="fa">&#xf0de;</i>
-             </p>
-           </div>
-           <div id="dommanipulation">
-           </div>
-           <div id="deletebtn">
-           </div>
-      </div>
+        </div>
     </div>
-    
     <script src="app.js"></script>
 </body>
 </html>
