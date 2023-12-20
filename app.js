@@ -11,7 +11,7 @@ let form = document.forms.formValidation
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    totalheading.style.display = "block"
+
 
     let InputText = input_text.value
     let Inputnumber = Number(input_number.value.trim())
@@ -23,6 +23,8 @@ form.addEventListener("submit", (event) => {
     } else {
         input_number.value = ""
         input_text.value = ""
+
+        totalheading.style.display = "block";
 
         let billinglist = document.createElement("div")
         billinglist.id = "billingList"
